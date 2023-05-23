@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>GPTranscribe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+  <meta name="description" content="" />
+  <link rel="icon" href="favicon.png">
+</head>
+
+<body class="bg-background px-16 pt-8 font-sans text-neutral-800">
+
+  <header class="flex flex-row items-center space-between">
+    <h1 class="grow-0 bg-[url('./img/gpt-logo-dark.svg')] bg-no-repeat bg-contain w-96 h-16 -indent-96">
+      GPTranscribe
+    </h1>
+    <nav class="grow">
+      <ul class="flex flex-row gap-6 justify-end text-sm">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#features">Pricing</a></li>
+        <li><a href="#features">Login</a></li>
+        <li><a href="#features" class="bg-primary p-2.5 rounded-full text-white">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section
+    class="flex flex-row items-center mt-32 duration-500 transform transition-all translate-y-12 opacity-0 ease-out"
+    data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+    <div class="w-5/12 py-8">
+      <p class="text-5xl mb-8">Spend less time writing your notes and more time providing care</p>
+      <p class="text-xl mb-16">Doctors in general practice spend 40%* of their time catching up on consultation admin.
+        Claim back that time. Fully automate your note-taking without losing the ability to mitigate liability.</p>
+      <ul class="text-xs text-gray-400">
+        <li>
+          <a href="https: //www.ncbi.nlm.nih.gov/pmc/articles/PMC5801881/">
+            <span class="text-base">*</span>
+            https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5801881/</a>
+        </li>
+        <li>
+          <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7661623/">
+            <span class="text-base">&nbsp;</span>
+            https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7661623/</a>
+        </li>
+      </ul>
+    </div>
+    <div class="w-1/12"></div>
+    <div class="w-6/12 p-8 relative">
+      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_46tauco6.json" background="transparent"
+        speed="0.5" style="width: 100%; height: 100%;" class="absolute top-[-70px] left-[-70px]" loop
+        autoplay></lottie-player>
+      <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_owkzfxim.json" background="transparent"
+        speed="0.5" style="width: 100%; height: 100%;" class="absolute bottom-[-120px] right-[-40px]" loop
+        autoplay></lottie-player>
+      <img class="rounded-lg shadow-2xl" src="./img/hero.jpg" />
+    </div>
+  </section>
+
+  <section id="features" class="mt-32 duration-500 transform transition-all translate-y-12 opacity-0 ease-out"
+    data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+    <div class="mx-auto max-w-2xl sm:text-center">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">All the features you need</h2>
+      <p class="mt-6 text-lg leading-8 ">Distinctio et nulla eum soluta et neque labore quibusdam.
+        Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</p>
+    </div>
+    <div class="mt-16 flex flex-row min-h-[200px] text-neutral-600">
+      <div class="w-8/12 flex flex-row p-8 cursor-default">
+        <div class="w-3/12 p-4 pt-12">
+          <h3 class="font-bold">Excluded differentials</h3>
+          <ul class="text-center text-sm mt-4">
+            <li class="bg-white rounded-full p-2 mb-4">Lupus (SLE)</li>
+            <li class="bg-transparent text-primary-light border border-primary-light rounded-full p-2 mb-4">
+              Add another
+            </li>
+          </ul>
+        </div>
+        <div class="w-9/12 p-4">
+          <div class="bg-white rounded-lg p-8">
+            <div class="flex flex-row items-center w-full mb-4 justify-between">
+              <h3 class="font-bold">Consultation summary</h3>
+              <div class="flex flex-row items-center">
+                <span class="text-xs mr-2">4:39</span>
+                <img src="./img/soundwave.svg" />
+              </div>
+            </div>
+            <p>
+              The patient presented today with complaints of persistent joint and muscle aches, accompanied by extreme
+              fatigue. These symptoms have been ongoing for 3 weeks, gradually worsening over time. The patient states
+              that the joint pain primarily affects the knees, hips, and wrists, while the muscle aches are diffuse and
+              generalized.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-4/12">
+        <ul class="h-full text-neutral-400">
+          <li class="h-1/4 border-l border-l-primary border-b-primary-light px-4 flex items-center">
+            Automatic summary
+          </li>
+          <li class="h-1/4 border-b border-t border-primary px-4 flex items-center text-neutral-800">
+            Capture what's not said
+          </li>
+          <li class="h-1/4 border-l border-b border-l-primary border-b-primary-light px-4 flex items-center">
+            Customize your style
+          </li>
+          <li class="h-1/4 border-l border-l-primary border-b-primary-light px-4 flex items-center">
+            Share your thoughts
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing"
+    class="flex flex-row items-center mt-32 duration-500 transform transition-all translate-y-12 opacity-0 ease-out"
+    data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+    <div>
+      <div class="mx-auto max-w-7xl">
+        <div class="mx-auto max-w-2xl sm:text-center">
+          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Simple no-tricks pricing</h2>
+          <p class="mt-6 text-lg leading-8 ">Distinctio et nulla eum soluta et neque labore quibusdam.
+            Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</p>
+        </div>
+        <div
+          class="bg-white mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+          <div class="p-8 sm:p-10 lg:flex-auto">
+            <h3 class="text-2xl font-bold tracking-tight text-gray-900">Lifetime membership</h3>
+            <p class="mt-6 text-base leading-7 ">Lorem ipsum dolor sit amet consect etur adipisicing elit.
+              Itaque amet indis perferendis blanditiis repellendus etur quidem assumenda.</p>
+            <div class="mt-10 flex items-center gap-x-4">
+              <h4 class="flex-none text-sm font-semibold leading-6 text-primary">What's included</h4>
+              <div class="h-px flex-auto bg-gray-100"></div>
+            </div>
+            <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6  sm:grid-cols-2 sm:gap-6">
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd" />
+                </svg>
+                Private forum access
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd" />
+                </svg>
+                Member resources
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd" />
+                </svg>
+                Entry to annual conference
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd" />
+                </svg>
+                Official member t-shirt
+              </li>
+            </ul>
+          </div>
+          <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+            <div
+              class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+              <div class="mx-auto max-w-xs px-8">
+                <p class="text-base font-semibold ">Pay once, own it forever</p>
+                <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                  <span class="text-5xl font-bold tracking-tight text-gray-900">$349</span>
+                  <span class="text-sm font-semibold leading-6 tracking-wide ">USD</span>
+                </p>
+                <a href="#"
+                  class="mt-10 block w-full rounded-full bg-primary px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Get
+                  access</a>
+                <p class="mt-6 text-xs leading-5 ">Invoices and receipts available for easy company
+                  reimbursement</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer"
+    class="flex flex-row items-center mt-32 duration-500 transform transition-all translate-y-12 opacity-0 ease-out mx-[-4em] w-screen"
+    data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
+    <div class="relative isolate overflow-hidden bg-gray-900 py-16 px-8 w-screen">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+        <div class="max-w-xl lg:max-w-lg">
+          <span
+            class="grow-0 bg-[url('./img/gpt-logo-white.svg')] bg-no-repeat bg-contain w-48 h-16 -indent-96 inline-block">
+            GPTranscribe
+          </span>
+          <p class="text-sm text-gray-400 mb-8">&copy; 2023 GPTranscribe Ltd. All rights reserved.</p>
+          <div class="flex flex-row gap-6">
+            <div class="flex rounded-md shadow-sm overflow-hidden" data-color="light">
+              <div
+                class="bg-europe-blue bg-[url('./img/european_stars.svg')] bg-no-repeat bg-center bg-contain w-[50px]">
+                <span
+                  class="relative block bg-[url('./img/padlock.svg')] bg-no-repeat bg-center bg-contain w-[30px] h-[30px] top-[52%] left-[50%] translate-y-[-50%] translate-x-[-50%]"></span>
+              </div>
+              <div class="bg-white text-gray-900 uppercase p-2">
+                <span><b>gdpr</b></span><br>
+                <span>compliant</span>
+              </div>
+            </div>
+            <div class="flex rounded-md shadow-sm overflow-hidden" data-color="light">
+              <div class="bg-europe-blue bg-[url('./img/hipaa.svg')] bg-no-repeat bg-center bg-contain w-[50px]"></div>
+              <div class="bg-white text-gray-900 uppercase p-2">
+                <span><b>hipaa</b></span><br>
+                <span>compliant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-xl lg:max-w-lg mt-16">
+          <h2 class="text-xl font-bold tracking-tight text-white">Subscribe to our newsletter.</h2>
+          <p class="mt-4 text-sm leading-8 text-gray-300">Nostrud amet eu ullamco nisi aute in ad minim nostrud
+            adipisicing velit quis. Duis tempor incididunt dolore.</p>
+          <div class="mt-6 flex max-w-md gap-x-4">
+            <label for="email-address" class="sr-only">Email address</label>
+            <input id="email-address" name="email" type="email" autocomplete="email" required
+              class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
+              placeholder="Enter your email">
+            <button type="submit"
+              class="flex-none rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
+          </div>
+          <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2 mt-8 text-xs">
+            <div class="flex flex-col items-start">
+              <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                <svg class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                </svg>
+              </div>
+              <dt class="mt-4 font-semibold text-white">Weekly articles</dt>
+              <dd class="mt-2 leading-7 text-gray-400">Non laboris consequat cupidatat laborum magna. Eiusmod non irure
+                cupidatat duis commodo amet.</dd>
+            </div>
+            <div class="flex flex-col items-start">
+              <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                <svg class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002" />
+                </svg>
+              </div>
+              <dt class="mt-4 font-semibold text-white">No spam</dt>
+              <dd class="mt-2 leading-7 text-gray-400">Officia excepteur ullamco ut sint duis proident non adipisicing.
+                Voluptate incididunt anim.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+        <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script>
+    function isInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.top <= (3 * window.innerHeight) / 4 &&
+        rect.left >= 0 &&
+        rect.left <= (3 * window.innerWidth) / 4
+      );
+    }
+
+    function isAboveViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top < 0
+      );
+    }
+
+    document.addEventListener("scroll", function () {
+      var replacers = document.querySelectorAll('[data-replace]');
+      for (var i = 0; i < replacers.length; i++) {
+        if (isInViewport(replacers[i])) {
+          let replaceClasses = JSON.parse(replacers[i].dataset.replace.replace(/'/g, '"'));
+          Object.keys(replaceClasses).forEach(function (key) {
+            replacers[i].classList.remove(key);
+            replacers[i].classList.add(replaceClasses[key]);
+          });
+          delete replacers[i].dataset.replace;
+        }
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var replacers = document.querySelectorAll('[data-replace]');
+      for (var i = 0; i < replacers.length; i++) {
+        if (isAboveViewport(replacers[i]) || isInViewport(replacers[i])) {
+          let replaceClasses = JSON.parse(replacers[i].dataset.replace.replace(/'/g, '"'));
+          Object.keys(replaceClasses).forEach(function (key) {
+            replacers[i].classList.remove(key);
+            replacers[i].classList.add(replaceClasses[key]);
+          });
+          delete replacers[i].dataset.replace;
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
