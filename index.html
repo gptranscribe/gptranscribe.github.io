@@ -97,7 +97,16 @@
             <div class="w-3/12 p-4 pt-12">
               <h3 class="font-bold">Excluded differentials</h3>
               <ul class="text-center text-sm mt-4">
-                <li class="bg-white rounded-full p-2 mb-4">Lupus (SLE)</li>
+                <li class="bg-white rounded-full p-2 mb-4 relative flex flex-row items-center justify-center">
+                  <label for="lupus-demo">Lupus (SLE)</label>
+                  <input type="checkbox" id="lupus-demo" name="lupus-demo"
+                    class="ml-2 cursor-pointer focus:ring-0 text-primary" />
+                  <span class="flex h-3 w-3 ml-2 relative">
+                    <span
+                      class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-light opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-primary-medium"></span>
+                  </span>
+                </li>
                 <li class="bg-transparent text-primary-light border border-primary-light rounded-full p-2 mb-4">
                   Add another
                 </li>
@@ -112,16 +121,14 @@
                     <img src="./img/soundwave.svg" />
                   </div>
                 </div>
-                <p>
-                  The patient presented today with complaints of persistent joint and muscle aches, accompanied by
-                  extreme fatigue. These symptoms have been ongoing for 3 weeks, gradually worsening over time. The
-                  patient states that the joint pain primarily affects the knees, hips, and wrists, while the muscle
-                  aches are diffuse and generalized.
-                </p>
-                <p class="mt-4">
-                  The patient does not exhibit any characteristic signs of lupus, such as skin rashes (such as a malar
-                  rash), oral ulcers, or other systemic manifestations commonly observed in SLE.
-                </p>
+                <div id="transcription-summary">
+                  <p>
+                    The patient presented today with complaints of persistent joint and muscle aches, accompanied by
+                    extreme fatigue. These symptoms have been ongoing for 3 weeks, gradually worsening over time. The
+                    patient states that the joint pain primarily affects the knees, hips, and wrists, while the muscle
+                    aches are diffuse and generalized.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -562,6 +569,43 @@
 
     window.addEventListener("load", function () {
       typeDialogue(dialogue, 10);
+    });
+  </script>
+  <script>
+    const demoCheckbox = document.getElementById("lupus-demo");
+    const container = document.getElementById("transcription-summary")
+    demoCheckbox.addEventListener("change", () => {
+      if (demoCheckbox.checked) {
+        let para = document.createElement("p");
+        para.id = "transcription-summary-lupus"
+        para.classList = ["mt-4"]
+        container.appendChild(para);
+        const text = "The patient does not exhibit any characteristic signs of lupus, such as skin rashes (such as a malar rash), oral ulcers, or other systemic manifestations commonly observed in SLE."
+        let i = 0;
+        let speed = 10;
+        const next = () => {
+          if (i < text.length) {
+            para.innerHTML += text[i];
+            setTimeout(next, speed);
+          }
+          i++;
+        };
+        next();
+      } else {
+        let para = document.getElementById("transcription-summary-lupus");
+        if (para) {
+          let speed = 10;
+          const next = () => {
+            if (para.innerHTML.length > 0) {
+              para.innerHTML = para.innerHTML.substring(0, para.innerHTML.length - 1);
+              setTimeout(next, speed);
+            } else {
+              para.remove();
+            }
+          };
+          next();
+        }
+      }
     });
   </script>
 </body>
