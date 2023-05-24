@@ -1890,6 +1890,14 @@ select {
     width: 33.333333%;
   }
 
+  .md\:w-1\/12 {
+    width: 8.333333%;
+  }
+
+  .md\:w-6\/12 {
+    width: 50%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1929,6 +1937,10 @@ select {
 
   .lg\:w-6\/12 {
     width: 50%;
+  }
+
+  .lg\:w-1\/12 {
+    width: 8.333333%;
   }
 
   .lg\:max-w-lg {
