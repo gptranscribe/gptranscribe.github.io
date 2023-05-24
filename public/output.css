@@ -768,6 +768,10 @@ select {
   top: 52%;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -1945,6 +1949,10 @@ select {
 }
 
 @media (min-width: 768px) {
+  .md\:right-\[-40px\] {
+    right: -40px;
+  }
+
   .md\:mx-\[-4em\] {
     margin-left: -4em;
     margin-right: -4em;
@@ -1976,6 +1984,10 @@ select {
 
   .md\:w-4\/12 {
     width: 33.333333%;
+  }
+
+  .md\:w-6\/12 {
+    width: 50%;
   }
 
   .md\:flex-row {
