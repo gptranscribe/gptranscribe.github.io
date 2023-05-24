@@ -768,6 +768,26 @@ select {
   top: 52%;
 }
 
+.right-\[10px\] {
+  right: 10px;
+}
+
+.top-\[-10px\] {
+  top: -10px;
+}
+
+.top-\[10px\] {
+  top: 10px;
+}
+
+.top-\[0px\] {
+  top: 0px;
+}
+
+.top-\[4px\] {
+  top: 4px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -868,6 +888,10 @@ select {
   margin-top: 3rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -882,6 +906,10 @@ select {
 
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .grid {
@@ -930,6 +958,10 @@ select {
 
 .h-24 {
   height: 6rem;
+}
+
+.h-3 {
+  height: 0.75rem;
 }
 
 .min-h-\[200px\] {
@@ -1020,6 +1052,10 @@ select {
   width: 8rem;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -1089,8 +1125,23 @@ select {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
 .cursor-default {
   cursor: default;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-1 {
@@ -1274,6 +1325,26 @@ select {
 .bg-indigo-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+}
+
+.bg-sky-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
+}
+
+.bg-sky-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+}
+
+.bg-primary-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 198 212 / var(--tw-bg-opacity));
+}
+
+.bg-primary-medium {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 158 203 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/img\/european_stars\.svg\'\)\] {
@@ -1548,6 +1619,14 @@ select {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.accent-primary {
+  accent-color: #7E27B0;
+}
+
+.accent-red-500 {
+  accent-color: #ef4444;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -1562,6 +1641,10 @@ select {
 
 .opacity-50 {
   opacity: 0.5;
+}
+
+.opacity-75 {
+  opacity: 0.75;
 }
 
 .shadow-2xl {
@@ -1730,6 +1813,12 @@ select {
 .focus\:ring-2:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ring-0:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
