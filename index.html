@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
   <link href="./output.css" rel="stylesheet">
   <meta name="description" content="" />
   <link rel="icon" href="favicon.png">
@@ -65,54 +66,123 @@
     data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
     <div class="mx-auto max-w-2xl sm:text-center">
       <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">All the features you need</h2>
-      <p class="mt-6 text-lg leading-8 ">Distinctio et nulla eum soluta et neque labore quibusdam.
-        Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</p>
+      <p class="mt-6 text-lg leading-8 ">Built with doctors, for doctors. We understand what you need to capture in the
+        notes so you can provide the best care but also understand what you were thinking during the consultation.</p>
     </div>
-    <div class="mt-16 flex flex-row min-h-[200px] text-neutral-600">
-      <div class="w-8/12 flex flex-row p-8 cursor-default">
-        <div class="w-3/12 p-4 pt-12">
-          <h3 class="font-bold">Excluded differentials</h3>
-          <ul class="text-center text-sm mt-4">
-            <li class="bg-white rounded-full p-2 mb-4">Lupus (SLE)</li>
-            <li class="bg-transparent text-primary-light border border-primary-light rounded-full p-2 mb-4">
-              Add another
-            </li>
-          </ul>
-        </div>
-        <div class="w-9/12 p-4">
-          <div class="bg-white rounded-lg p-8">
-            <div class="flex flex-row items-center w-full mb-4 justify-between">
-              <h3 class="font-bold">Consultation summary</h3>
-              <div class="flex flex-row items-center">
-                <span class="text-xs mr-2">4:39</span>
-                <img src="./img/soundwave.svg" />
+    <div class="mt-16 flex flex-row min-h-[200px] text-neutral-600 min-h-[410px]">
+      <!--Tabs content-->
+      <div class="w-8/12">
+        <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+          id="features-tabs-1" role="tabpanel" aria-labelledby="tabs-home-tab" data-te-tab-active>
+          <div class="flex flex-row p-8 cursor-default">
+            <div class="w-3/12 p-4 pt-12">
+              <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_khggnjkd.json" background="transparent"
+                speed="1" style="width: 100%;" class="" loop autoplay></lottie-player>
+            </div>
+            <div class="w-9/12 p-4">
+              <div after=""
+                class="bg-white rounded-lg p-8 relative after:content-[attr(before)] after:h-24 after:w-full after:block after:bg-gradient-to-b after:from-[#ffffff00] after:to-[#fff] after:absolute after:bottom-8 after:left-0">
+                <div class="flex flex-row items-center w-full mb-4 justify-between">
+                  <h3 class="font-bold">Consultation transcription</h3>
+                </div>
+                <div id="transcription-content" class="h-[200px] overflow-hidden">
+                </div>
               </div>
             </div>
-            <p>
-              The patient presented today with complaints of persistent joint and muscle aches, accompanied by extreme
-              fatigue. These symptoms have been ongoing for 3 weeks, gradually worsening over time. The patient states
-              that the joint pain primarily affects the knees, hips, and wrists, while the muscle aches are diffuse and
-              generalized.
-            </p>
           </div>
         </div>
+        <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+          id="features-tabs-2" role="tabpanel" aria-labelledby="tabs-profile-tab">
+          <div class="flex flex-row p-8 cursor-default">
+            <div class="w-3/12 p-4 pt-12">
+              <h3 class="font-bold">Excluded differentials</h3>
+              <ul class="text-center text-sm mt-4">
+                <li class="bg-white rounded-full p-2 mb-4">Lupus (SLE)</li>
+                <li class="bg-transparent text-primary-light border border-primary-light rounded-full p-2 mb-4">
+                  Add another
+                </li>
+              </ul>
+            </div>
+            <div class="w-9/12 p-4">
+              <div class="bg-white rounded-lg p-8">
+                <div class="flex flex-row items-center w-full mb-4 justify-between">
+                  <h3 class="font-bold">Consultation summary</h3>
+                  <div class="flex flex-row items-center">
+                    <span class="text-xs mr-2">4:39</span>
+                    <img src="./img/soundwave.svg" />
+                  </div>
+                </div>
+                <p>
+                  The patient presented today with complaints of persistent joint and muscle aches, accompanied by
+                  extreme fatigue. These symptoms have been ongoing for 3 weeks, gradually worsening over time. The
+                  patient states that the joint pain primarily affects the knees, hips, and wrists, while the muscle
+                  aches are diffuse and generalized.
+                </p>
+                <p class="mt-4">
+                  The patient does not exhibit any characteristic signs of lupus, such as skin rashes (such as a malar
+                  rash), oral ulcers, or other systemic manifestations commonly observed in SLE.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+          id="features-tabs-3" role="tabpanel" aria-labelledby="tabs-profile-tab">
+          Tab 3 content
+        </div>
+        <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+          id="features-tabs-4" role="tabpanel" aria-labelledby="tabs-contact-tab">
+          Tab 4 content
+        </div>
       </div>
-      <div class="w-4/12">
-        <ul class="h-full text-neutral-400">
-          <li class="h-1/4 border-l border-l-primary border-b-primary-light px-4 flex items-center">
-            Automatic summary
-          </li>
-          <li class="h-1/4 border-b border-t border-primary px-4 flex items-center text-neutral-800">
-            Capture what's not said
-          </li>
-          <li class="h-1/4 border-l border-b border-l-primary border-b-primary-light px-4 flex items-center">
-            Customize your style
-          </li>
-          <li class="h-1/4 border-l border-l-primary border-b-primary-light px-4 flex items-center">
-            Share your thoughts
-          </li>
-        </ul>
-      </div>
+
+      <!--Tabs navigation-->
+      <ul class="w-4/12 items-stretch" role="tablist" data-te-nav-ref>
+        <li role="presentation" class="h-1/4">
+          <a href="#features-tabs-1"
+            class="block h-full px-4 flex flex-col justify-center border-l-2 border-transparent text-gray-400 data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary"
+            data-te-toggle="pill" data-te-target="#features-tabs-1" role="tab" aria-controls="features-tabs-1"
+            aria-selected="true" data-te-nav-active>
+            <p>Automatic summary</p>
+            <p class="mt-1 text-sm">
+              Save time on each consultation
+            </p>
+          </a>
+        </li>
+        <li role="presentation" class="h-1/4">
+          <a href="#features-tabs-2"
+            class="block h-full px-4 flex flex-col justify-center border-l-2 border-transparent text-gray-400 data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary"
+            data-te-toggle="pill" data-te-target="#features-tabs-2" role="tab" aria-controls="features-tabs-2"
+            aria-selected="false">
+            <p>Capture what's not said</p>
+            <p class="mt-1 text-sm">
+              Out of your head and into the notes with the click of a button
+            </p>
+          </a>
+        </li>
+        <li role="presentation" class="h-1/4">
+          <a href="#features-tabs-3"
+            class="block h-full px-4 flex flex-col justify-center border-l-2 border-transparent text-gray-400 data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary"
+            data-te-toggle="pill" data-te-target="#features-tabs-3" role="tab" aria-controls="features-tabs-3"
+            aria-selected="false">
+            <p>Customize your style</p>
+            <p class="mt-1 text-sm">
+              Decide if you want your notes to be verbose or succinct
+            </p>
+          </a>
+        </li>
+        <li role="presentation" class="h-1/4">
+          <a href="#features-tabs-4"
+            class="block h-full px-4 flex flex-col justify-center border-l-2 border-transparent text-gray-400 data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary"
+            data-te-toggle="pill" data-te-target="#features-tabs-4" role="tab" aria-controls="features-tabs-4"
+            aria-selected="false">
+            <p>?</p>
+            <p class="mt-1 text-sm">
+              ?
+            </p>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -274,7 +344,11 @@
   </footer>
 
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   <script>
+    /*
+     * Replace classes on elements when they scroll into view
+     */
     function isInViewport(el) {
       const rect = el.getBoundingClientRect();
       return (
@@ -318,6 +392,44 @@
           delete replacers[i].dataset.replace;
         }
       }
+    });
+  </script>
+  <script>
+    const dialogue = [
+      "Patient: Hi, Doctor. I've been feeling really exhausted lately, and I've been experiencing joint and muscle aches and pains. It's been going on for a few weeks now, and it's starting to worry me.",
+      "Doctor: I understand. Let's start by discussing your symptoms in more detail. Can you describe the type of fatigue you're experiencing? Is it a constant feeling of tiredness or does it come and go?",
+      "Patient: It's pretty constant. I wake up feeling tired, and it doesn't improve throughout the day. Even with enough sleep, I just can't seem to shake off this fatigue.",
+      "Doctor: I see. And what about the joint and muscle aches? Are they localized to specific areas or do they occur throughout your body?",
+      "Patient: The aches and pains are widespread. They're not limited to any"
+    ];
+
+    function typeDialogue(dialogue, speed) {
+      const container = document.getElementById("transcription-content");
+      let i = 0;
+      let j = 0;
+      let text = dialogue[i];
+      let para = document.createElement("p");
+      container.appendChild(para);
+      const next = () => {
+        if (i < dialogue.length) {
+          para.innerHTML += text[j];
+          j++;
+          if (j >= text.length) {
+            para = document.createElement("p");
+            para.classList = ["mt-4"]
+            container.appendChild(para);
+            j = 0;
+            i++;
+            text = dialogue[i];
+          }
+          setTimeout(next, speed);
+        }
+      };
+      next();
+    }
+
+    window.addEventListener("load", function () {
+      typeDialogue(dialogue, 10);
     });
   </script>
 </body>
