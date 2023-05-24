@@ -14,26 +14,26 @@
   <link rel="icon" href="favicon.png">
 </head>
 
-<body class="bg-background px-16 pt-8 font-sans text-neutral-800">
+<body class="bg-background px-4 md:px-16 pt-8 font-sans text-neutral-800">
 
-  <header class="flex flex-row items-center space-between">
-    <h1 class="grow-0 bg-[url('./img/gpt-logo-dark.svg')] bg-no-repeat bg-contain w-96 h-16 -indent-96">
+  <header class="sm:flex sm:flex-row items-center space-between">
+    <h1 class="grow-0 bg-[url('./img/gpt-logo-dark.svg')] bg-no-repeat bg-contain w-48 sm:w-96 h-16 -indent-96">
       GPTranscribe
     </h1>
     <nav class="grow">
-      <ul class="flex flex-row gap-6 justify-end text-sm">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="">Login</a></li>
-        <li><a href="" class="bg-primary p-2.5 rounded-full text-white">Get Started</a></li>
+      <ul class="sm:flex sm:flex-row gap-6 justify-end text-sm text-center sm:text-left">
+        <li><a href="#features" class="block sm:inline-block p-2.5">Features</a></li>
+        <li><a href="#pricing" class="block sm:inline-block p-2.5">Pricing</a></li>
+        <li><a href="" class="block sm:inline-block p-2.5">Login</a></li>
+        <li><a href="" class="block sm:inline-block bg-primary p-2.5 rounded-full text-white">Get Started</a></li>
       </ul>
     </nav>
   </header>
 
   <section
-    class="flex flex-row items-center mt-32 duration-500 transform transition-all translate-y-12 opacity-0 ease-out"
+    class="lg:flex lg:flex-row items-center mt-12 md:mt-32 duration-500 transform transition-all translate-y-12 opacity-0 ease-out"
     data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-    <div class="w-5/12 py-8">
+    <div class="lg:w-5/12 py-8">
       <p class="text-5xl mb-8">Spend less time writing your notes and more time providing care</p>
       <p class="text-xl mb-16">Doctors in general practice spend 40%* of their time catching up on consultation admin.
         Claim back that time. Fully automate your note-taking without losing the ability to mitigate liability.</p>
@@ -51,7 +51,7 @@
       </ul>
     </div>
     <div class="w-1/12"></div>
-    <div class="w-6/12 p-8 relative">
+    <div class="w-full lg:w-6/12 p-8 relative">
       <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_46tauco6.json" background="transparent"
         speed="0.5" style="width: 100%; height: 100%;" class="absolute top-[-70px] left-[-70px]" loop
         autoplay></lottie-player>
@@ -209,8 +209,8 @@
       <p class="mt-6 text-lg leading-8">Compare the features of each plan to decide which suits you best.</p>
     </div>
 
-    <div class="flex flex-row items-center">
-      <div class="w-4/12 m-2 p-8 bg-white shadow-lg rounded-2xl dark:bg-gray-800">
+    <div class="md:flex md:flex-row items-center">
+      <div class="w-full md:w-4/12 m-2 p-8 bg-white shadow-lg rounded-2xl dark:bg-gray-800">
         <p class="mb-4 text-xl font-medium text-gray-800 dark:text-gray-50 text-center">
           Occasional
         </p>
@@ -255,7 +255,7 @@
         </button>
       </div>
 
-      <div class="w-4/12 m-2 p-8 bg-white shadow-lg rounded-2xl dark:bg-gray-800">
+      <div class="w-full md:w-4/12 m-2 p-8 bg-white shadow-lg rounded-2xl dark:bg-gray-800">
         <p class="mb-4 text-xl font-medium text-gray-800 dark:text-gray-50 text-center">
           Full-time
         </p>
@@ -300,7 +300,7 @@
         </button>
       </div>
 
-      <div class="w-4/12 m-2 p-8 bg-white shadow-lg rounded-2xl dark:bg-gray-800">
+      <div class="w-full md:w-4/12 m-2 p-8 bg-white shadow-lg rounded-2xl dark:bg-gray-800">
         <p class="mb-4 text-xl font-medium text-gray-800 dark:text-gray-50 text-center">
           Practice
         </p>
@@ -348,7 +348,7 @@
   </section>
 
   <footer id="footer"
-    class="flex flex-row items-center mt-32 duration-500 transform transition-all translate-y-12 opacity-0 ease-out mx-[-4em] w-screen"
+    class="flex flex-row items-center mt-32 duration-500 transform transition-all translate-y-12 opacity-0 ease-out mx-[-1em] md:mx-[-4em] w-screen"
     data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>
     <div class="relative isolate overflow-hidden bg-gray-900 py-16 px-8 w-screen">
       <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
