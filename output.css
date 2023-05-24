@@ -1990,6 +1990,10 @@ select {
     width: 50%;
   }
 
+  .md\:w-\[150px\] {
+    width: 150px;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -2015,8 +2019,23 @@ select {
     padding-right: 4rem;
   }
 
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
