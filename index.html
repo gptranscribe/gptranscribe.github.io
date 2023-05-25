@@ -455,8 +455,7 @@
           <h2 class="text-xl font-bold tracking-tight text-white">Subscribe to our newsletter.</h2>
           <form
             action="https://gptranscribe.us8.list-manage.com/subscribe/post?u=1b7c024d7c82b409a1ad51d1e&amp;id=b0c7ff2e95&amp;f_id=00137be0f0"
-            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mce-form"
-            target="_blank">
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
             <div class="mt-6 flex max-w-md gap-x-4">
               <label for="mce-EMAIL" class="sr-only">Email address</label>
               <input id="mce-EMAIL" name="EMAIL" type="email" autocomplete="email" required
@@ -631,44 +630,6 @@
         }
       }
     });
-  </script>
-  <script>
-    function ajaxReq() {
-      if (window.XMLHttpRequest) {
-        return new XMLHttpRequest();
-      } else if (window.ActiveXObject) {
-        return new ActiveXObject("Microsoft.XMLHTTP");
-      } else {
-        alert("Browser does not support XMLHTTP.");
-        return false;
-      }
-    }
-
-    const forms = document.getElementsByClassName("mce-form");
-    for (var i = 0; i < forms.length; i++) {
-      forms[i].addEventListener("submit", (e) => {
-        e.preventDefault();
-        let url = "https://gptranscribe.us8.list-manage.com/subscribe/post-json?u=1b7c024d7c82b409a1ad51d1e&id=b0c7ff2e95&c=?";
-        const data = new FormData(e.target);
-        const json = JSON.stringify(Object.fromEntries(data));
-        fetch(url, {
-          method: 'post',
-          headers: {
-            "Content-type": "application/json; charset=UTF-8"
-          },
-          body: json
-        })
-          .then(function (resp) {
-            return resp.json()
-          })
-          .then(function (data) {
-            console.log('Request succeeded with JSON response', data);
-          })
-          .catch(function (error) {
-            console.log('Request failed', error);
-          });
-      });
-    }
   </script>
 </body>
 
