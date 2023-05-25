@@ -69,23 +69,23 @@
       <p class="mt-6 text-lg leading-8 ">Built with doctors, for doctors. We understand what you need to capture in the
         notes so you can provide the best care but also understand what you were thinking during the consultation.</p>
     </div>
-    <div class="mt-16 flex flex-row min-h-[200px] text-neutral-600 min-h-[410px]">
+    <div class="mt-16 flex flex-col-reverse lg:flex-row min-h-[200px] text-neutral-600 min-h-[410px]">
       <!--Tabs content-->
-      <div class="w-8/12">
+      <div class="w-full shrink-0 lg:w-8/12">
         <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
           id="features-tabs-1" role="tabpanel" aria-labelledby="tabs-home-tab" data-te-tab-active>
-          <div class="flex flex-row p-8 cursor-default">
-            <div class="w-3/12 p-4 pt-12">
+          <div class="flex flex-col lg:flex-row p-2 lg:p-8 cursor-default">
+            <div class="w-6/12 mx-auto lg:w-3/12 p-2 lg:p-4 pt-12">
               <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_khggnjkd.json" background="transparent"
                 speed="1" style="width: 100%;" class="" loop autoplay></lottie-player>
             </div>
-            <div class="w-9/12 p-4">
+            <div class="w-full lg:w-9/12 p-1 lg:p-4">
               <div after=""
                 class="bg-white rounded-lg p-8 relative after:content-[attr(before)] after:h-24 after:w-full after:block after:bg-gradient-to-b after:from-[#ffffff00] after:to-[#fff] after:absolute after:bottom-8 after:left-0">
                 <div class="flex flex-row items-center w-full mb-4 justify-between">
                   <h3 class="font-bold">Consultation transcription</h3>
                 </div>
-                <div id="transcription-content" class="h-[200px] overflow-hidden">
+                <div id="transcription-content" class="h-[400px] lg:h-[200px] overflow-hidden">
                 </div>
               </div>
             </div>
@@ -93,8 +93,8 @@
         </div>
         <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
           id="features-tabs-2" role="tabpanel" aria-labelledby="tabs-profile-tab">
-          <div class="flex flex-row p-8 cursor-default">
-            <div class="w-3/12 p-4 pt-12">
+          <div class="flex flex-col lg:flex-row p-2 lg:p-8 cursor-default">
+            <div class="w-9/12 mx-auto lg:w-3/12 p-4 pt-12">
               <h3 class="font-bold">Excluded differentials</h3>
               <ul class="text-center text-sm mt-4">
                 <li class="bg-white rounded-full p-2 mb-4 relative flex flex-row items-center justify-center">
@@ -112,7 +112,7 @@
                 </li>
               </ul>
             </div>
-            <div class="w-9/12 p-4">
+            <div class="w-full lg:w-9/12 p-1 lg:p-4">
               <div class="bg-white rounded-lg p-8">
                 <div class="flex flex-row items-center w-full mb-4 justify-between">
                   <h3 class="font-bold">Consultation summary</h3>
@@ -144,47 +144,47 @@
       </div>
 
       <!--Tabs navigation-->
-      <ul class="w-4/12 items-stretch" role="tablist" data-te-nav-ref>
+      <ul class="w-full shrink-0 lg:w-4/12 items-stretch" role="tablist" data-te-nav-ref>
         <li role="presentation" class="h-1/4">
           <a href="#features-tabs-1"
-            class="block h-full px-4 flex flex-col justify-center border-l-2 border-transparent text-gray-400 data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary"
+            class="block h-full px-4 py-2 lg:py-0 flex flex-col justify-center border-l-2 border-transparent text-gray-400 data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary"
             data-te-toggle="pill" data-te-target="#features-tabs-1" role="tab" aria-controls="features-tabs-1"
             aria-selected="true" data-te-nav-active>
             <p>Automatic summary</p>
-            <p class="mt-1 text-sm">
+            <p class="mt-1 text-xs lg:text-sm">
               Save time on each consultation
             </p>
           </a>
         </li>
         <li role="presentation" class="h-1/4">
           <a href="#features-tabs-2"
-            class="block h-full px-4 flex flex-col justify-center border-l-2 border-transparent text-gray-400 data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary"
+            class="block h-full px-4 py-2 lg:py-0 flex flex-col justify-center border-l-2 border-transparent text-gray-400 data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary"
             data-te-toggle="pill" data-te-target="#features-tabs-2" role="tab" aria-controls="features-tabs-2"
             aria-selected="false">
             <p>Capture what's not said</p>
-            <p class="mt-1 text-sm">
+            <p class="mt-1 text-xs lg:text-sm">
               Out of your head and into the notes with the click of a button
             </p>
           </a>
         </li>
         <li role="presentation" class="h-1/4">
           <a href="#features-tabs-3"
-            class="block h-full px-4 flex flex-col justify-center border-l-2 border-transparent text-gray-400 data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary"
+            class="block h-full px-4 py-2 lg:py-0 flex flex-col justify-center border-l-2 border-transparent text-gray-400 data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary"
             data-te-toggle="pill" data-te-target="#features-tabs-3" role="tab" aria-controls="features-tabs-3"
             aria-selected="false">
             <p>Customise your style</p>
-            <p class="mt-1 text-sm">
+            <p class="mt-1 text-xs lg:text-sm">
               Decide if you want your notes to be verbose or succinct
             </p>
           </a>
         </li>
         <li role="presentation" class="h-1/4">
           <a href="#features-tabs-4"
-            class="block h-full px-4 flex flex-col justify-center border-l-2 border-transparent text-gray-400 data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary"
+            class="block h-full px-4 py-2 lg:py-0 flex flex-col justify-center border-l-2 border-transparent text-gray-400 data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary"
             data-te-toggle="pill" data-te-target="#features-tabs-4" role="tab" aria-controls="features-tabs-4"
             aria-selected="false">
             <p>?</p>
-            <p class="mt-1 text-sm">
+            <p class="mt-1 text-xs lg:text-sm">
               ?
             </p>
           </a>
