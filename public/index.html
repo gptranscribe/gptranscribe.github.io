@@ -453,14 +453,23 @@
         </div>
         <div class="max-w-xl lg:max-w-lg mt-16">
           <h2 class="text-xl font-bold tracking-tight text-white">Subscribe to our newsletter.</h2>
-          <div class="mt-6 flex max-w-md gap-x-4">
-            <label for="email-address" class="sr-only">Email address</label>
-            <input id="email-address" name="email" type="email" autocomplete="email" required
-              class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
-              placeholder="Enter your email">
-            <button type="submit"
-              class="flex-none rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-darker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-medium">Subscribe</button>
-          </div>
+          <form
+            action="https://gptranscribe.us8.list-manage.com/subscribe/post?u=1b7c024d7c82b409a1ad51d1e&amp;id=b0c7ff2e95&amp;f_id=00137be0f0"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mce-form"
+            target="_blank">
+            <div class="mt-6 flex max-w-md gap-x-4">
+              <label for="mce-EMAIL" class="sr-only">Email address</label>
+              <input id="mce-EMAIL" name="EMAIL" type="email" autocomplete="email" required
+                class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
+                placeholder="Enter your email">
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                  name="b_1b7c024d7c82b409a1ad51d1e_b0c7ff2e95" tabindex="-1" value=""></div>
+              <button type="submit" name="subscribe" id="mc-embedded-subscribe"
+                class="flex-none rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-darker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-medium">
+                Subscribe
+              </button>
+            </div>
+          </form>
           <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2 mt-8 text-xs">
             <div class="flex flex-col items-start">
               <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
@@ -622,6 +631,44 @@
         }
       }
     });
+  </script>
+  <script>
+    function ajaxReq() {
+      if (window.XMLHttpRequest) {
+        return new XMLHttpRequest();
+      } else if (window.ActiveXObject) {
+        return new ActiveXObject("Microsoft.XMLHTTP");
+      } else {
+        alert("Browser does not support XMLHTTP.");
+        return false;
+      }
+    }
+
+    const forms = document.getElementsByClassName("mce-form");
+    for (var i = 0; i < forms.length; i++) {
+      forms[i].addEventListener("submit", (e) => {
+        e.preventDefault();
+        let url = "https://gptranscribe.us8.list-manage.com/subscribe/post-json?u=1b7c024d7c82b409a1ad51d1e&id=b0c7ff2e95&c=?";
+        const data = new FormData(e.target);
+        const json = JSON.stringify(Object.fromEntries(data));
+        fetch(url, {
+          method: 'post',
+          headers: {
+            "Content-type": "application/json; charset=UTF-8"
+          },
+          body: json
+        })
+          .then(function (resp) {
+            return resp.json()
+          })
+          .then(function (data) {
+            console.log('Request succeeded with JSON response', data);
+          })
+          .catch(function (error) {
+            console.log('Request failed', error);
+          });
+      });
+    }
   </script>
 </body>
 
