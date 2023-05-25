@@ -24,10 +24,14 @@
       <ul class="sm:flex sm:flex-row gap-6 justify-end text-sm text-center sm:text-left">
         <li><a href="#features" class="block sm:inline-block p-2.5 hover:text-black">Features</a></li>
         <li><a href="#pricing" class="block sm:inline-block p-2.5 hover:text-black">Pricing</a></li>
-        <li><a href="" class="block sm:inline-block p-2.5 hover:text-black">Login</a></li>
-        <li><a href=""
-            class="block sm:inline-block bg-primary p-2.5 rounded-full text-white hover:bg-primary-darker">Get
-            Started</a></li>
+        <li><button class="block sm:inline-block p-2.5 hover:text-black" data-te-toggle="modal"
+            data-te-target="#getStartedModal">
+            Login
+          </button></li>
+        <li><button class=" block sm:inline-block bg-primary p-2.5 rounded-full text-white hover:bg-primary-darker"
+            data-te-toggle="modal" data-te-target="#getStartedModal">
+            Get Started
+          </button></li>
       </ul>
     </nav>
   </header>
@@ -272,7 +276,8 @@
           </li>
         </ul>
         <button type="button"
-          class="py-2 px-4  bg-primary hover:bg-primary-darker focus:ring-primary focus:ring-offset-primary-light text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+          class="py-2 px-4 bg-primary hover:bg-primary-darker focus:ring-primary focus:ring-offset-primary-light text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg "
+          data-te-toggle="modal" data-te-target="#getStartedModal">
           Get Started
         </button>
       </div>
@@ -317,7 +322,8 @@
           </li>
         </ul>
         <button type="button"
-          class="py-2 px-4  bg-primary hover:bg-primary-darker focus:ring-primary focus:ring-offset-primary-light text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+          class="py-2 px-4 bg-primary hover:bg-primary-darker focus:ring-primary focus:ring-offset-primary-light text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg "
+          data-te-toggle="modal" data-te-target="#getStartedModal">
           Subscribe Now
         </button>
       </div>
@@ -362,7 +368,8 @@
           </li>
         </ul>
         <button type="button"
-          class="py-2 px-4  bg-primary hover:bg-primary-darker focus:ring-primary focus:ring-offset-primary-light text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+          class="py-2 px-4 bg-primary hover:bg-primary-darker focus:ring-primary focus:ring-offset-primary-light text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg "
+          data-te-toggle="modal" data-te-target="#getStartedModal">
           Get in Touch
         </button>
       </div>
@@ -411,12 +418,12 @@
           </li>
         </ul>
         <button type="button"
-          class="py-2 px-4 mt-8 bg-primary hover:bg-primary-darker focus:ring-primary focus:ring-offset-primary-light text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+          class="py-2 px-4 mt-8 bg-primary hover:bg-primary-darker focus:ring-primary focus:ring-offset-primary-light text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+          data-te-toggle="modal" data-te-target="#getStartedModal">
           Register Your Interest
         </button>
       </div>
     </div>
-
   </section>
 
   <footer id="footer"
@@ -504,6 +511,60 @@
       </div>
     </div>
   </footer>
+
+  <div data-te-modal-init
+    class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+    id="getStartedModal" data-te-backdrop="static" data-te-keyboard="false" tabindex="-1"
+    aria-labelledby="getStartedModalLabel" aria-hidden="true">
+    <div data-te-modal-dialog-ref
+      class="pointer-events-none relative w-auto translate-y-[100px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
+      <div
+        class="min-[576px]:shadow-[0_0.5rem_1rem_rgba(#000, 0.15)] pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+        <div
+          class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+          <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200" id="exampleModalLabel">
+            You're a little ahead of us...
+          </h5>
+          <button type="button"
+            class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+            data-te-modal-dismiss aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div data-te-modal-body-ref class="relative p-4">
+          <p>We're still getting things finalised before we open GPTranscribe more widely. If you'd like to
+            be notified of general availability or be part of our early-access program, fill in the form below.</p>
+          <form
+            action="https://gptranscribe.us8.list-manage.com/subscribe/post?u=1b7c024d7c82b409a1ad51d1e&amp;id=b0c7ff2e95&amp;f_id=00137be0f0"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+            <div class="mt-6 flex max-w-md gap-x-4">
+              <label for="mce-EMAIL" class="sr-only">Email address</label>
+              <input id="mce-EMAIL" name="EMAIL" type="email" autocomplete="email" required
+                class="min-w-0 flex-auto rounded-md border-1 border-gray-500 bg-white/5 px-3.5 py-2 text-white focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
+                placeholder="Enter your email">
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                  name="b_1b7c024d7c82b409a1ad51d1e_b0c7ff2e95" tabindex="-1" value=""></div>
+              <button type="submit" name="subscribe" id="mc-embedded-subscribe"
+                class="flex-none rounded-lg bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-darker focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-medium">
+                Let me know
+              </button>
+            </div>
+          </form>
+        </div>
+        <div
+          class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+          <button type="button"
+            class="inline-block rounded-lg bg-white px-6 pb-2 pt-2.5 text-xs text-gray-600 font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-primary-light focus:bg-primary-light focus:outline-none focus:ring-0 active:bg-primary-medium"
+            data-te-modal-dismiss>
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
