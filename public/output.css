@@ -780,6 +780,14 @@ select {
   z-index: -10;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
@@ -1282,6 +1290,10 @@ select {
   border-width: 0px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-l-2 {
   border-left-width: 2px;
 }
@@ -1311,6 +1323,16 @@ select {
 .border-primary {
   --tw-border-opacity: 1;
   border-color: rgb(126 39 176 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-primary-medium {
+  --tw-border-opacity: 1;
+  border-color: rgb(185 158 203 / var(--tw-border-opacity));
 }
 
 .bg-background {
@@ -1665,6 +1687,14 @@ select {
 
 .opacity-75 {
   opacity: 0.75;
+}
+
+.opacity-90 {
+  opacity: 0.9;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .shadow-2xl {
