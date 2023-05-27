@@ -740,7 +740,7 @@
   <script>
     const trackables = document.getElementsByClassName("track-interaction");
     for (let i = 0; i < trackables.length; i++) {
-      trackables[i].addEventListener("click", () => {
+      trackables[i].addEventListener("click", function () {
         window.lintrk('track', { conversion_id: 12832306 });
       });
     }
