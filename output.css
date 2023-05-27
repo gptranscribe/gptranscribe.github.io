@@ -820,6 +820,14 @@ select {
   margin: 1rem;
 }
 
+.m-8 {
+  margin: 2rem;
+}
+
+.m-16 {
+  margin: 4rem;
+}
+
 .mx-\[-1em\] {
   margin-left: -1em;
   margin-right: -1em;
@@ -833,6 +841,21 @@ select {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.mx-14 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .mb-16 {
@@ -921,6 +944,10 @@ select {
 
 .ml-1 {
   margin-left: 0.25rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .box-content {
@@ -2395,6 +2422,10 @@ select {
 }
 
 @media (min-width: 976px) {
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:block {
     display: block;
   }
