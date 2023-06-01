@@ -12,6 +12,14 @@
   <link href="./output.css" rel="stylesheet">
   <meta name="description" content="" />
   <link rel="icon" href="favicon.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11201525867"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11201525867');
+  </script>
   <script type="text/javascript">
     (function (f, b) {
       if (!b.__SV) {
@@ -758,6 +766,10 @@
     const intentTrackables = document.getElementsByClassName("track-intent");
     for (let i = 0; i < intentTrackables.length; i++) {
       intentTrackables[i].addEventListener("click", function () {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-11201525867/ONBGCJKLpqYYEOvwpt0p',
+          'event_callback': () => { }
+        });
         window.lintrk('track', { conversion_id: 12832306 });
         mixpanel.track('buying intent');
       });
